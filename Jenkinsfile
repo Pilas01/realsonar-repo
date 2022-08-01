@@ -29,9 +29,9 @@ pipeline {
             }
        }
         stage('Quality Gate') {
-          steps {
+           steps {
                  waitForQualityGate abortPipeline: true
-              }
+           }
         }
         
         stage('Deploy to tomcat') {
